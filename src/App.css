@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+body {
+  background: purple;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app__container {
+  height: 100vh;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.toDo_container {
+  border: 1px dotted white;
+  border-radius: 8px;
+  padding: 40px 20px;
+  max-width: 400px;
+  min-height: 300px;
+  background: black;
+}
+
+.add__button {
+  background: blue;
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.delete__btn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: orangered;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.render__task {
+  background: white;
+  padding: 0 5px;
+  color: orangered;
+  min-height: 25px;
+  width: 178px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.render__container {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inside__render {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.primary__heading {
+  color: white;
+}
+
+.task__container {
+  display: flex;
+  gap: 20px;
 }
